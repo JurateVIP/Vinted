@@ -1,9 +1,8 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 
 public class LoginPageTest extends BasePage{
     private static WebDriver driver;
-
     public LoginPageTest(WebDriver driver) {
         super(driver);
         this.driver = driver;

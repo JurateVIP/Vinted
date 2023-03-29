@@ -3,6 +3,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.AfterClass;
+import java.io.IOException;
 public class PageTest {
     private static WebDriver driver;
     private static LoginPageTest loginPageTest;
@@ -28,8 +29,9 @@ public class PageTest {
         loginPageTest.clickOnLoginByEmail();
     }
     @Test
-    public void searchFieldTest(){
+    public void searchFieldTest() throws IOException {
         searchTest.fillSearchField();
+        basePage.screenShot();
     }
     @AfterClass
     public static void tearDown(){
